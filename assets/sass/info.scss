@@ -1,0 +1,140 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+
+/*{
+    border: 1px solid pink;
+}*/
+
+
+body {
+
+    background-image: url(../img/imagen.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        margin-top: 17rem;
+        color: white;
+        border: 4px solid red;
+        border-radius: 13px;
+        flex-direction: column;
+
+        padding: 2rem;
+        width: 700px;
+    }
+
+    .info {
+        margin: 0rem 4rem 0rem 4rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+
+//Menú
+
+.app_menu {
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main_menu {
+    background-color: rgb(153, 199, 241);
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+
+    .menu_items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0rem 4rem 0rem 4rem;
+        font-size: 25px;
+
+
+        .casa {
+            color: white;
+        }
+
+        .nube {
+            color: white;
+        }
+
+        .guardar {
+            color: white;
+        }
+
+        .info {
+            color: rgb(28, 83, 231);
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .container{
+        
+        width: 100%;
+        font-size: 12px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+       
+        
+    }
+
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 300px;
+        
+
+    }
+    .inform{
+        width: 300px;
+    }
+
+}
